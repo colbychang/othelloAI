@@ -3,10 +3,14 @@
 from graphics import *
 
 def initPieces(win, locationList, message):
-    whitePiece1 = Piece("white", location, 3, win)
-    whitePiece2 = Piece("white", location, 4, win)
-    blackPiece1 = Piece("black", location, 3, win)
-    blackPiece2 = Piece("black", location, 4, win)
+    loc1 = [3,3]
+    loc2 = [4,4]
+    loc3 = [3,4]
+    loc4 = [4,3]
+    whitePiece1 = Piece("white", loc1, win)
+    whitePiece2 = Piece("white", loc2, win)
+    blackPiece1 = Piece("black", loc3, win)
+    blackPiece2 = Piece("black", loc4, win)
 
     blackPieceList = [blackPiece1, blackPiece2]
     whitePieceList = [whitePiece1, whitePiece2]
