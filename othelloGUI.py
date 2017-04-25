@@ -17,6 +17,7 @@ def createGrid(win):
             new_square = Button(win, Point(i * 100 + 50, j * 100 + 50),
                                 100, 100, "")
             new_square.setColor("forestgreen")
+            new_square.IDNumber([i, j])
             tiles[i].append(new_square)
 
 ##            # checks if i + j is odd, fills in white or gray

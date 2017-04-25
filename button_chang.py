@@ -58,7 +58,7 @@ class Button:
     def occupy(self, piece):
         """occupies square with a piece"""
         self.occupied = True
-        self.piece_color = piece.getColor()
+        self.piece_color = piece.color
         self.piece = piece
 
 ##    def tempOccupy(self, turn_color):
@@ -86,3 +86,7 @@ class Button:
     def getID(self):
         """returns ID"""
         return self.ID
+
+    def flipPiece(self, turn_color):
+        self.piece_color = turn_color
+        self.piece.changeColor(turn_color)
